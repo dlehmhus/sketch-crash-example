@@ -1,0 +1,30 @@
+{
+  "name": "sketch-crashapp",
+  "private": true,
+  "skpm": {
+    "main": "sketch-crashapp.sketchplugin",
+    "manifest": "src/manifest.json"
+  },
+  "version": "0.0.1",
+  "description": "Example of a setup that causes the Sketch app to quit unexpectedly when importing image assets",
+  "main": "index.js",
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "render": "skpm-build --watch --run",
+    "render:once": "skpm-build --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "author": "Dario Lehmhus",
+  "license": "MIT",
+  "dependencies": {
+    "nwb": "^0.15.6",
+    "react": "^15.4.2",
+    "react-primitives": "^0.4.4",
+    "react-sketchapp": "^1.0.0",
+    "react-test-renderer": "^15.4.1"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.2.0"
+  }
+}

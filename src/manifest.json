@@ -1,0 +1,18 @@
+{
+    "compatibleVersion": 1,
+    "bundleVersion": 1,
+    "commands": [
+      {
+        "name": "sketch-crashapp",
+        "identifier": "main",
+        "script": "./main.js"
+      }
+    ],
+    "menu": {
+      "isRoot": true,
+      "items": [
+        "main"
+      ]
+    }
+  }
+  
